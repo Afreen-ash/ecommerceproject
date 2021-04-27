@@ -1,0 +1,685 @@
+ 67  cart.html 
+@@ -0,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cart | Life Style Store</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">Lifestyle Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+                        <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings </a></li>
+                        <li><a href="logout.html"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid content table-responsive">
+            <div class="row decor_bg">
+                <div class="col-md-6 col-md-offset-3">
+                    <table class="table table-hover table-striped">
+                            <tbody>
+                                <tr>
+                                    <th>Item Number</th>
+                                    <th>Item Name</th>
+                                    <th>Price</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Total</th>
+                                    <th>Rs 0</th>
+                                    <th><button class="btn btn-primary" type="submit"><a href="success.html" target="_blank">Confirm Order</a></button></th>
+                                </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+                <div class="container">
+                    <center>
+                     <p>Copyright © Lifestyle Store. All Rights
+                    Reserved | Contact Us: +91 90000 00000”. </p>
+                    </center>	
+                </div>    
+        </footer>
+    </body>
+</html> 
+ 77  css/index.css 
+@@ -0,0 +1,77 @@
+body{
+    width: 100%; 
+    height: 100%; 
+    margin: 0;
+    }
+a{
+    text-decoration: none; 
+    background-color: transparent; 
+    color:#ededed;
+ }
+ .content{
+    min-height: 600px;
+ }
+ .banner-image{
+   padding-top: 75px; 
+   padding-bottom: 50px;
+   margin-bottom: 20px;
+   text-align: center;
+   color: #f8f8f8;
+   background: url(img/intro-bg_1.jpg) no-repeat center; 
+   background-size: cover;
+ }
+.banner_content{
+   position: relative;
+   padding-top: 6%;
+   padding-bottom: 6%; 
+   overflow: hidden;
+   margin-top: 12%;
+   margin-bottom: 12%; 
+   background-color: 
+   rgba(0, 0, 0, 0.7); 
+   max-width: 660px;
+   font-family: roboto;
+}
+.caption{
+   color:#000; 
+   padding:0px 10px 10px; 
+   font-weight: bold; 
+   text-align: center;
+}
+
+.signup{
+   margin-top: 50px;
+   margin-bottom: 190px;
+}
+.settings{
+   margin-top: 70px;
+   margin-bottom: 345px;
+}
+
+#login-panel .panel-footer{
+   font-weight:normal;
+}
+
+#cameras:before, #watches:before, #shirts:before{
+   display: block; 
+   content: " "; 
+   margin-top: -85px; 
+   height: 85px; 
+   visibility: hidden;
+}
+
+footer{
+   padding: 10px 0;
+   background-color: #101010; 
+   columns: #9d9d9d;;
+   bottom: 0; 
+   font-size:14px;
+   width: 100%;
+}
+.content{
+   margin-top: 80px;
+}
+
+.password{
+   font-size: 25px;
+} 
+ 92  index.html 
+@@ -0,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>Lifestyle Store</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+    <!--jQuery library--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">Lifestyle Store</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="banner-image">
+            <div class="container">
+            <center>
+                <div class="banner_content">
+                    <h1>We sell lifestyle.</h1>
+                    <p>Flat 40% OFF on premium brands</p> 
+                    <a href="products.html" class="btn btn-danger
+                    btn-lg active">Shop Now</a>  
+                </div>
+            </center>
+            </div>
+
+        </div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="products.php#cameras" ><div class="thumbnail">
+                                <img src="img/1.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Cameras</h3>
+                                    <p>Choose among the best available in the world.</p>
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="products.php#watches" ><div class="thumbnail">
+                                <img src="img/7.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Watches</h3>
+                                    <p>Original watches from the best brands.</p>
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="products.php#shirts" ><div class="thumbnail">
+                                <img src="img/8.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Shirts</h3>
+                                    <p>Our exquisite collection of shirts.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <div class="container">
+                <center>
+                 <p>Copyright © Lifestyle Store. All Rights
+                Reserved | Contact Us: +91 90000 00000”. </p>
+                </center>	
+            </div>    
+        </footer>
+</body> 
+ 72  login.html 
+@@ -0,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Login | Life Style Store</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">Lifestyle Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container-fluid decor_bg" id="login-panel">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="panel panel-primary" >
+                            <div class="panel-heading">
+                                <h4>LOGIN</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p class="text-warning"><i>Login to make a purchase</i><p>
+                                <form action="login_submit.php" method="POST">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control"  placeholder="Email" name="e-mail" required = "true">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password" name="password" required = "true">
+                                    </div>
+                                    <button type="submit" name="submit" class="btn btn-primary">Login</button><br><br>
+                                </form><br/>
+                            </div>
+                            <div class="panel-footer"><p>Don't have an account? <a href="signup.html">Register</a></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+                <div class="container">
+                    <center>
+                     <p>Copyright © Lifestyle Store. All Rights
+                    Reserved | Contact Us: +91 90000 00000”. </p>
+                    </center>	
+                </div>    
+        </footer>
+    </body>
+</html>
+ 185  products.html 
+@@ -0,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Products | Life Style Store</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">Lifestyle Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+                        <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings </a></li>
+                        <li><a href="logout.html"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+        <div class="container content">
+            <!-- Jumbotron Header -->
+            <div class="jumbotron home-spacer" id="products-jumbotron">
+                <h1>Welcome to our Lifestyle Store!</h1>
+                <p>We have the best cameras, watches and shirts for you. No need to hunt around, we have all in one place.</p>
+
+            </div>
+            <hr>
+
+            <div class="row text-center" id="cameras">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/5.jpg" alt="">
+                        <div class="caption">
+                            <h3>Cannon EOS </h3>
+                            <p>Price: Rs. 36000.00 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/2.jpg" alt="">
+                        <div class="caption">
+                            <h3>Nikon EOS </h3>
+                            <p>Price: Rs. 40,000.00 </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/3.jpg" alt="">
+                        <div class="caption">
+                            <h3>Sony DSLR</h3>
+                            <p>Price: Rs. 50000.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/4.jpg" alt="">
+                        <div class="caption">
+                            <h3>Olympus DSLR</h3>
+                            <p>Price: Rs. 50000.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="watches">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/9.jpg" alt="">
+                        <div class="caption">
+                            <h3>Titan Model #301 </h3>
+                            <p>Price: Rs. 13000.00 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/10.jpg" alt="">
+                        <div class="caption">
+                            <h3>Titan Model #201</h3>
+                            <p>Price: Rs. 3000.00 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/11.jpg" alt="">
+                        <div class="caption">
+                            <h3>HMT Milan</h3>
+                            <p>Price: Rs. 8000.00 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/12.jpg" alt="">
+                        <div class="caption">
+                            <h3>Faber Luba #111 </h3>
+                            <p>Price: Rs. 18000.00 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="shirts">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/8.jpg" alt="">
+                        <div class="caption">
+                            <h3>H&W </h3>
+                            <p>Price: Rs. 800.00 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/6.jpg" alt="">
+                        <div class="caption">
+                            <h3>Luis Phil</h3>
+                            <p>Price: Rs. 1000.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/13.jpg" alt="">
+                        <div class="caption">
+                            <h3>John Zok</h3>
+                            <p>Price: Rs. 1500.00</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/14.jpg" alt="">
+                        <div class="caption">
+                            <h3>Jhalsani</h3>
+                            <p>Price Rs. 1300.00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+                <div class="container">
+                    <center>
+                     <p>Copyright © Lifestyle Store. All Rights
+                    Reserved | Contact Us: +91 90000 00000”. </p>
+                    </center>	
+                </div>    
+        </footer>
+    </body>
+
+</html>
+ 70  settings.html 
+@@ -0,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <title>Settings | Life Style Store</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">Lifestyle Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+                        <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings </a></li>
+                        <li><a href="logout.html"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container settings">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4 form">
+                    <h1 class="password"> Change Password </h1>
+                    <form>
+                        <div class="form-group">
+                                <input class="form-control" placeholder="Old Password" type="password" name="oldpassword" required="true">
+
+                                <br>
+
+                                <input class="form-control" placeholder="New Password" type="password" name="newpassword">
+
+                                <br>
+
+                                <input class="form-control" placeholder="Re-type New Password" type="password" name="retypenewpassword" required="true">
+
+                                <br>
+
+                    <button class="btn btn-primary" type="submit">Change</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+                <div class="container">
+                    <center>
+                     <p>Copyright © Lifestyle Store. All Rights
+                    Reserved | Contact Us: +91 90000 00000”. </p>
+                    </center>	
+                </div>    
+        </footer>
+    </body>
+</html> 
+ 80  signup.html 
+@@ -0,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <title>Sign UP | Life Style Store</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">Lifestyle Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container signup">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4 form">
+                    <h1> Sign up </h1>
+                    <form>
+                        <div class="form-group">
+                                <input class="form-control" placeholder="Name" type="text" name="name" required="true">
+
+                                <br>
+
+                                <input class="form-control" placeholder="Email" type="text" name="email">
+
+                                <br>
+
+                                <input class="form-control" placeholder="Password" type="password" name="password">
+
+                                <br>
+
+                                <input class="form-control" placeholder="Contact" type="text" name="phone" required="true">
+
+                                <br>
+
+                                <input class="form-control" placeholder="City" type="text" name="city" required="true">
+
+                                <br>
+                                <input class="form-control" placeholder="Address" type="text" name="address" required="true">
+
+                                <br>
+
+                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+                <div class="container">
+                    <center>
+                     <p>Copyright © Lifestyle Store. All Rights
+                    Reserved | Contact Us: +91 90000 00000”. </p>
+                    </center>	
+                </div>    
+        </footer>
+    </body>
+</html> 
+ 26  success.html 
+@@ -0,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>Success | Life Style Store</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container-fluid content">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                      <h3 align="center">Your order is confirmed. Thank you for shopping with us.</h3><hr>
+                    <p align="center">Click <a href="products.html">here</a> to purchase any other item.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
